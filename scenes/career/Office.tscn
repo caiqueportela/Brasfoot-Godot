@@ -1,0 +1,657 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/screens/OfficeScreen.cs" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/components/Pitch.tscn" id="2"]
+
+[node name="Office" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.063, 0.145, 0.094, 1)
+
+[node name="Margin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 8
+
+[node name="Root" type="VBoxContainer" parent="Margin"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 8
+
+[node name="Header" type="HBoxContainer" parent="Margin/Root"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Mark" type="Label" parent="Margin/Root/Header"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.941, 0.816, 0.376, 1)
+theme_override_font_sizes/font_size = 22
+text = "BRASFOOT"
+
+[node name="Spacer" type="Control" parent="Margin/Root/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Date" type="Label" parent="Margin/Root/Header"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_font_sizes/font_size = 18
+
+[node name="Spacer2" type="Control" parent="Margin/Root/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Funds" type="Label" parent="Margin/Root/Header"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(0.941, 0.816, 0.376, 1)
+theme_override_font_sizes/font_size = 18
+
+[node name="Middle" type="HBoxContainer" parent="Margin/Root"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 12
+
+[node name="ClubPanel" type="PanelContainer" parent="Margin/Root/Middle"]
+layout_mode = 2
+custom_minimum_size = Vector2(360, 0)
+size_flags_vertical = 3
+
+[node name="ClubBox" type="MarginContainer" parent="Margin/Root/Middle/ClubPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 10
+
+[node name="Column" type="VBoxContainer" parent="Margin/Root/Middle/ClubPanel/ClubBox"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Swap" type="OptionButton" parent="Margin/Root/Middle/ClubPanel/ClubBox/Column"]
+layout_mode = 2
+unique_name_in_owner = true
+
+[node name="Row" type="ColorRect" parent="Margin/Root/Middle/ClubPanel/ClubBox/Column"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 6)
+mouse_filter = 2
+color = Color(0.2, 0.55, 0.28, 1)
+
+[node name="Identity" type="HBoxContainer" parent="Margin/Root/Middle/ClubPanel/ClubBox/Column"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Crest" type="TextureRect" parent="Margin/Root/Middle/ClubPanel/ClubBox/Column/Identity"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(84, 84)
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Names" type="VBoxContainer" parent="Margin/Root/Middle/ClubPanel/ClubBox/Column/Identity"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ClubTitleLabel" type="Label" parent="Margin/Root/Middle/ClubPanel/ClubBox/Column/Identity/Names"]
+layout_mode = 2
+unique_name_in_owner = true
+clip_text = true
+theme_override_colors/font_color = Color(0.941, 0.816, 0.376, 1)
+theme_override_font_sizes/font_size = 20
+
+[node name="Source" type="Label" parent="Margin/Root/Middle/ClubPanel/ClubBox/Column/Identity/Names"]
+layout_mode = 2
+unique_name_in_owner = true
+clip_text = true
+
+[node name="Stadium" type="Label" parent="Margin/Root/Middle/ClubPanel/ClubBox/Column"]
+layout_mode = 2
+unique_name_in_owner = true
+clip_text = true
+
+[node name="Coach" type="Label" parent="Margin/Root/Middle/ClubPanel/ClubBox/Column"]
+layout_mode = 2
+unique_name_in_owner = true
+clip_text = true
+
+[node name="LabelConfidence" type="Label" parent="Margin/Root/Middle/ClubPanel/ClubBox/Column"]
+layout_mode = 2
+unique_name_in_owner = true
+
+[node name="Confidence" type="ProgressBar" parent="Margin/Root/Middle/ClubPanel/ClubBox/Column"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 14)
+max_value = 100.0
+show_percentage = false
+mouse_filter = 2
+
+[node name="LabelFitness" type="Label" parent="Margin/Root/Middle/ClubPanel/ClubBox/Column"]
+layout_mode = 2
+unique_name_in_owner = true
+
+[node name="Fitness" type="ProgressBar" parent="Margin/Root/Middle/ClubPanel/ClubBox/Column"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 14)
+max_value = 100.0
+show_percentage = false
+mouse_filter = 2
+
+[node name="NextTitle" type="Label" parent="Margin/Root/Middle/ClubPanel/ClubBox/Column"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(0.941, 0.816, 0.376, 1)
+
+[node name="NextOpponent" type="Label" parent="Margin/Root/Middle/ClubPanel/ClubBox/Column"]
+layout_mode = 2
+unique_name_in_owner = true
+clip_text = true
+
+[node name="NextDate" type="Label" parent="Margin/Root/Middle/ClubPanel/ClubBox/Column"]
+layout_mode = 2
+unique_name_in_owner = true
+clip_text = true
+
+[node name="Pitch" parent="Margin/Root/Middle/ClubPanel/ClubBox/Column" instance=ExtResource("2")]
+unique_name_in_owner = true
+layout_mode = 2
+custom_minimum_size = Vector2(320, 148)
+size_flags_horizontal = 3
+
+[node name="Continue" type="Button" parent="Margin/Root/Middle/ClubPanel/ClubBox/Column"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 48)
+text = "Continue"
+
+[node name="TabPanel" type="PanelContainer" parent="Margin/Root/Middle"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Tabs" type="TabContainer" parent="Margin/Root/Middle/TabPanel"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Squad" type="VBoxContainer" parent="Margin/Root/Middle/TabPanel/Tabs"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="SquadScroll" type="ScrollContainer" parent="Margin/Root/Middle/TabPanel/Tabs/Squad"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="SquadColumn" type="VBoxContainer" parent="Margin/Root/Middle/TabPanel/Tabs/Squad/SquadScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Head" type="HBoxContainer" parent="Margin/Root/Middle/TabPanel/Tabs/Squad/SquadScroll/SquadColumn"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="HeadName" type="Label" parent="Margin/Root/Middle/TabPanel/Tabs/Squad/SquadScroll/SquadColumn/Head"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 0)
+size_flags_horizontal = 3
+text = "Name"
+
+[node name="HeadPosition" type="Label" parent="Margin/Root/Middle/TabPanel/Tabs/Squad/SquadScroll/SquadColumn/Head"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(72, 0)
+text = "Position"
+
+[node name="HeadAge" type="Label" parent="Margin/Root/Middle/TabPanel/Tabs/Squad/SquadScroll/SquadColumn/Head"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(36, 0)
+text = "Id"
+
+[node name="HeadTrait" type="Label" parent="Margin/Root/Middle/TabPanel/Tabs/Squad/SquadScroll/SquadColumn/Head"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(72, 0)
+text = "Carac."
+
+[node name="HeadStrength" type="Label" parent="Margin/Root/Middle/TabPanel/Tabs/Squad/SquadScroll/SquadColumn/Head"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(90, 0)
+text = "Força"
+
+[node name="HeadFitness" type="Label" parent="Margin/Root/Middle/TabPanel/Tabs/Squad/SquadScroll/SquadColumn/Head"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(90, 0)
+text = "Cond."
+
+[node name="HeadGoals" type="Label" parent="Margin/Root/Middle/TabPanel/Tabs/Squad/SquadScroll/SquadColumn/Head"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(40, 0)
+text = "Goals"
+
+[node name="HeadWage" type="Label" parent="Margin/Root/Middle/TabPanel/Tabs/Squad/SquadScroll/SquadColumn/Head"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(120, 0)
+text = "Salário"
+
+[node name="SquadList" type="VBoxContainer" parent="Margin/Root/Middle/TabPanel/Tabs/Squad/SquadScroll/SquadColumn"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_horizontal = 3
+
+[node name="Lineup" type="VBoxContainer" parent="Margin/Root/Middle/TabPanel/Tabs"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 6
+
+[node name="Controls" type="HBoxContainer" parent="Margin/Root/Middle/TabPanel/Tabs/Lineup"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="LabelFormation" type="Label" parent="Margin/Root/Middle/TabPanel/Tabs/Lineup/Controls"]
+layout_mode = 2
+unique_name_in_owner = true
+text = "Formação"
+
+[node name="Formation" type="OptionButton" parent="Margin/Root/Middle/TabPanel/Tabs/Lineup/Controls"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(120, 0)
+
+[node name="LabelTactic" type="Label" parent="Margin/Root/Middle/TabPanel/Tabs/Lineup/Controls"]
+layout_mode = 2
+unique_name_in_owner = true
+text = "Tática"
+
+[node name="Tactic" type="OptionButton" parent="Margin/Root/Middle/TabPanel/Tabs/Lineup/Controls"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(160, 0)
+
+[node name="LineupSummary" type="Label" parent="Margin/Root/Middle/TabPanel/Tabs/Lineup/Controls"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_horizontal = 3
+
+[node name="AutoLineup" type="Button" parent="Margin/Root/Middle/TabPanel/Tabs/Lineup/Controls"]
+layout_mode = 2
+unique_name_in_owner = true
+text = "Automática"
+
+[node name="LineupHint" type="Label" parent="Margin/Root/Middle/TabPanel/Tabs/Lineup"]
+layout_mode = 2
+unique_name_in_owner = true
+autowrap_mode = 3
+custom_minimum_size = Vector2(480, 0)
+
+[node name="LineupScroll" type="ScrollContainer" parent="Margin/Root/Middle/TabPanel/Tabs/Lineup"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_horizontal = 3
+
+[node name="LineupList" type="VBoxContainer" parent="Margin/Root/Middle/TabPanel/Tabs/Lineup/LineupScroll"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_horizontal = 3
+
+[node name="Table" type="VBoxContainer" parent="Margin/Root/Middle/TabPanel/Tabs"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 6
+
+[node name="StandingsBody" type="OptionButton" parent="Margin/Root/Middle/TabPanel/Tabs/Table"]
+layout_mode = 2
+unique_name_in_owner = true
+
+[node name="TableScroll" type="ScrollContainer" parent="Margin/Root/Middle/TabPanel/Tabs/Table"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_horizontal = 3
+
+[node name="TableColumn" type="VBoxContainer" parent="Margin/Root/Middle/TabPanel/Tabs/Table/TableScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TableHead" type="HBoxContainer" parent="Margin/Root/Middle/TabPanel/Tabs/Table/TableScroll/TableColumn"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="HeadRank" type="Label" parent="Margin/Root/Middle/TabPanel/Tabs/Table/TableScroll/TableColumn/TableHead"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(36, 0)
+text = "#"
+
+[node name="HeadClub" type="Label" parent="Margin/Root/Middle/TabPanel/Tabs/Table/TableScroll/TableColumn/TableHead"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(180, 0)
+size_flags_horizontal = 3
+text = "Time"
+
+[node name="HeadPlayed" type="Label" parent="Margin/Root/Middle/TabPanel/Tabs/Table/TableScroll/TableColumn/TableHead"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(32, 0)
+text = "J"
+
+[node name="HeadWins" type="Label" parent="Margin/Root/Middle/TabPanel/Tabs/Table/TableScroll/TableColumn/TableHead"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(32, 0)
+text = "V"
+
+[node name="HeadDraws" type="Label" parent="Margin/Root/Middle/TabPanel/Tabs/Table/TableScroll/TableColumn/TableHead"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(32, 0)
+text = "E"
+
+[node name="HeadLosses" type="Label" parent="Margin/Root/Middle/TabPanel/Tabs/Table/TableScroll/TableColumn/TableHead"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(32, 0)
+text = "D"
+
+[node name="HeadGoalsFor" type="Label" parent="Margin/Root/Middle/TabPanel/Tabs/Table/TableScroll/TableColumn/TableHead"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(40, 0)
+text = "GP"
+
+[node name="HeadGoalsAgainst" type="Label" parent="Margin/Root/Middle/TabPanel/Tabs/Table/TableScroll/TableColumn/TableHead"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(40, 0)
+text = "GC"
+
+[node name="HeadGoalDiff" type="Label" parent="Margin/Root/Middle/TabPanel/Tabs/Table/TableScroll/TableColumn/TableHead"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(40, 0)
+text = "SG"
+
+[node name="HeadPoints" type="Label" parent="Margin/Root/Middle/TabPanel/Tabs/Table/TableScroll/TableColumn/TableHead"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(40, 0)
+text = "Pts"
+
+[node name="TableList" type="VBoxContainer" parent="Margin/Root/Middle/TabPanel/Tabs/Table/TableScroll/TableColumn"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_horizontal = 3
+
+[node name="ScorersTitle" type="Label" parent="Margin/Root/Middle/TabPanel/Tabs/Table/TableScroll/TableColumn"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(0.941, 0.816, 0.376, 1)
+text = "Scorers"
+
+[node name="ScorerList" type="VBoxContainer" parent="Margin/Root/Middle/TabPanel/Tabs/Table/TableScroll/TableColumn"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_horizontal = 3
+
+[node name="Calendar" type="ScrollContainer" parent="Margin/Root/Middle/TabPanel/Tabs"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CalendarList" type="VBoxContainer" parent="Margin/Root/Middle/TabPanel/Tabs/Calendar"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_horizontal = 3
+
+[node name="Finances" type="ScrollContainer" parent="Margin/Root/Middle/TabPanel/Tabs"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="FinanceList" type="VBoxContainer" parent="Margin/Root/Middle/TabPanel/Tabs/Finances"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_horizontal = 3
+
+[node name="Market" type="VBoxContainer" parent="Margin/Root/Middle/TabPanel/Tabs"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 6
+
+[node name="MarketSearch" type="LineEdit" parent="Margin/Root/Middle/TabPanel/Tabs/Market"]
+layout_mode = 2
+unique_name_in_owner = true
+placeholder_text = "Buscar"
+
+[node name="MarketScroll" type="ScrollContainer" parent="Margin/Root/Middle/TabPanel/Tabs/Market"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_horizontal = 3
+
+[node name="MarketList" type="VBoxContainer" parent="Margin/Root/Middle/TabPanel/Tabs/Market/MarketScroll"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_horizontal = 3
+
+[node name="Training" type="VBoxContainer" parent="Margin/Root/Middle/TabPanel/Tabs"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 8
+
+[node name="TrainingNotice" type="Label" parent="Margin/Root/Middle/TabPanel/Tabs/Training"]
+layout_mode = 2
+unique_name_in_owner = true
+autowrap_mode = 3
+custom_minimum_size = Vector2(480, 0)
+
+[node name="TrainingPhysical" type="Button" parent="Margin/Root/Middle/TabPanel/Tabs/Training"]
+layout_mode = 2
+unique_name_in_owner = true
+alignment = 0
+text = "Físico"
+
+[node name="TrainingTactical" type="Button" parent="Margin/Root/Middle/TabPanel/Tabs/Training"]
+layout_mode = 2
+unique_name_in_owner = true
+alignment = 0
+text = "Tático"
+
+[node name="TrainingTechnical" type="Button" parent="Margin/Root/Middle/TabPanel/Tabs/Training"]
+layout_mode = 2
+unique_name_in_owner = true
+alignment = 0
+text = "Técnico"
+
+[node name="Options" type="VBoxContainer" parent="Margin/Root/Middle/TabPanel/Tabs"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 6
+
+[node name="LabelSpeed" type="Label" parent="Margin/Root/Middle/TabPanel/Tabs/Options"]
+layout_mode = 2
+unique_name_in_owner = true
+text = "Speed"
+
+[node name="Speed" type="OptionButton" parent="Margin/Root/Middle/TabPanel/Tabs/Options"]
+layout_mode = 2
+unique_name_in_owner = true
+
+[node name="Sound" type="CheckBox" parent="Margin/Root/Middle/TabPanel/Tabs/Options"]
+layout_mode = 2
+unique_name_in_owner = true
+button_pressed = true
+text = "Sound"
+
+[node name="LabelLanguage" type="Label" parent="Margin/Root/Middle/TabPanel/Tabs/Options"]
+layout_mode = 2
+unique_name_in_owner = true
+text = "Language"
+
+[node name="Language" type="OptionButton" parent="Margin/Root/Middle/TabPanel/Tabs/Options"]
+layout_mode = 2
+unique_name_in_owner = true
+
+[node name="Cloud" type="CheckBox" parent="Margin/Root/Middle/TabPanel/Tabs/Options"]
+layout_mode = 2
+unique_name_in_owner = true
+text = "Cloud"
+
+[node name="CloudHint" type="Label" parent="Margin/Root/Middle/TabPanel/Tabs/Options"]
+layout_mode = 2
+unique_name_in_owner = true
+autowrap_mode = 3
+custom_minimum_size = Vector2(480, 36)
+
+[node name="Competitions" type="Label" parent="Margin/Root/Middle/TabPanel/Tabs/Options"]
+layout_mode = 2
+unique_name_in_owner = true
+
+[node name="HistoryTitle" type="Label" parent="Margin/Root/Middle/TabPanel/Tabs/Options"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(0.941, 0.816, 0.376, 1)
+text = "Histórico"
+
+[node name="HistoryScroll" type="ScrollContainer" parent="Margin/Root/Middle/TabPanel/Tabs/Options"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_horizontal = 3
+
+[node name="History" type="VBoxContainer" parent="Margin/Root/Middle/TabPanel/Tabs/Options/HistoryScroll"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_horizontal = 3
+
+[node name="Bar" type="HBoxContainer" parent="Margin/Root"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Save" type="Button" parent="Margin/Root/Bar"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(140, 40)
+text = "Save"
+
+[node name="BarSpacer" type="Control" parent="Margin/Root/Bar"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Quit" type="Button" parent="Margin/Root/Bar"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(140, 40)
+text = "Quit"
+
+[node name="Offer" type="Control" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Shadow" type="ColorRect" parent="Offer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0, 0, 0, 0.55)
+
+[node name="OfferCenter" type="CenterContainer" parent="Offer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="Card" type="PanelContainer" parent="Offer/OfferCenter"]
+layout_mode = 2
+custom_minimum_size = Vector2(480, 0)
+
+[node name="OfferMargin" type="MarginContainer" parent="Offer/OfferCenter/Card"]
+layout_mode = 2
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_bottom = 16
+
+[node name="OfferColumn" type="VBoxContainer" parent="Offer/OfferCenter/Card/OfferMargin"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="OfferTitle" type="Label" parent="Offer/OfferCenter/Card/OfferMargin/OfferColumn"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(0.941, 0.816, 0.376, 1)
+theme_override_font_sizes/font_size = 22
+
+[node name="OfferDetail" type="Label" parent="Offer/OfferCenter/Card/OfferMargin/OfferColumn"]
+layout_mode = 2
+unique_name_in_owner = true
+autowrap_mode = 3
+custom_minimum_size = Vector2(420, 0)
+
+[node name="OfferPrice" type="Label" parent="Offer/OfferCenter/Card/OfferMargin/OfferColumn"]
+layout_mode = 2
+unique_name_in_owner = true
+
+[node name="OfferValue" type="LineEdit" parent="Offer/OfferCenter/Card/OfferMargin/OfferColumn"]
+layout_mode = 2
+unique_name_in_owner = true
+
+[node name="OfferButtons" type="HBoxContainer" parent="Offer/OfferCenter/Card/OfferMargin/OfferColumn"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="SendOffer" type="Button" parent="Offer/OfferCenter/Card/OfferMargin/OfferColumn/OfferButtons"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(180, 42)
+text = "Enviar"
+
+[node name="CloseOffer" type="Button" parent="Offer/OfferCenter/Card/OfferMargin/OfferColumn/OfferButtons"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(140, 42)
+text = "Cancel"
+
+[node name="Dialog" type="AcceptDialog" parent="."]
+unique_name_in_owner = true
+title = "Brasfoot Godot"
+
+[node name="ConfirmDialog" type="ConfirmationDialog" parent="."]
+unique_name_in_owner = true
+title = "Brasfoot Godot"
+ok_button_text = "Quit"
+cancel_button_text = "Cancel"

@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://7lwq6w1w8ju8"
+
+[deps]
+
+files=["res://translations/brasfoot.pt.translation", "res://translations/brasfoot.en.translation", "res://translations/brasfoot.es.translation"]
+
+source_file="res://translations/brasfoot.csv"
+dest_files=["res://translations/brasfoot.pt.translation", "res://translations/brasfoot.en.translation", "res://translations/brasfoot.es.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

@@ -1,0 +1,50 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Brasfoot Godot"
+config/description="Brasfoot Godot"
+config/version="2026.0.0"
+run/main_scene="res://scenes/Boot.tscn"
+config/features=PackedStringArray("4.7", "C#")
+boot_splash/bg_color=Color(0.07, 0.15, 0.09, 1)
+boot_splash/show_image=false
+config/icon="res://icon.png"
+
+[autoload]
+
+Catalog="*res://scenes/autoload/Catalog.tscn"
+Session="*res://scenes/autoload/Session.tscn"
+Preferences="*res://scenes/autoload/Preferences.tscn"
+
+[display]
+
+window/size/viewport_width=1366
+window/size/viewport_height=768
+window/size/resizable=false
+
+[dotnet]
+
+project/assembly_name="Brasfoot"
+
+[gui]
+
+theme/custom="res://theme/brasfoot.tres"
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://translations/brasfoot.pt.translation", "res://translations/brasfoot.en.translation", "res://translations/brasfoot.es.translation")
+locale/fallback="pt"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.07, 0.15, 0.09, 1)

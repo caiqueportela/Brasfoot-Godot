@@ -1,0 +1,131 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/screens/SettingsScreen.cs" id="1"]
+
+[node name="Settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.063, 0.145, 0.094, 1)
+
+[node name="Row" type="ColorRect" parent="."]
+layout_mode = 1
+anchor_right = 1.0
+anchor_bottom = 0.16
+mouse_filter = 2
+color = Color(0.11, 0.28, 0.16, 1)
+
+[node name="Center" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Card" type="PanelContainer" parent="Center"]
+layout_mode = 2
+custom_minimum_size = Vector2(520, 0)
+
+[node name="Margin" type="MarginContainer" parent="Center/Card"]
+layout_mode = 2
+theme_override_constants/margin_left = 28
+theme_override_constants/margin_top = 22
+theme_override_constants/margin_right = 28
+theme_override_constants/margin_bottom = 22
+
+[node name="Column" type="VBoxContainer" parent="Center/Card/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Title" type="Label" parent="Center/Card/Margin/Column"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(0.941, 0.816, 0.376, 1)
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+text = "Configurações"
+
+[node name="Stripe" type="ColorRect" parent="Center/Card/Margin/Column"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 3)
+mouse_filter = 2
+color = Color(0.941, 0.816, 0.376, 0.85)
+
+[node name="LabelVolume" type="Label" parent="Center/Card/Margin/Column"]
+layout_mode = 2
+unique_name_in_owner = true
+text = "Volume"
+
+[node name="VolumeRow" type="HBoxContainer" parent="Center/Card/Margin/Column"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Volume" type="HSlider" parent="Center/Card/Margin/Column/VolumeRow"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(320, 28)
+size_flags_horizontal = 3
+min_value = 0.0
+max_value = 100.0
+step = 1.0
+value = 100.0
+
+[node name="VolumeValue" type="Label" parent="Center/Card/Margin/Column/VolumeRow"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(52, 0)
+text = "100%"
+
+[node name="LabelLanguage" type="Label" parent="Center/Card/Margin/Column"]
+layout_mode = 2
+unique_name_in_owner = true
+text = "Language"
+
+[node name="Language" type="OptionButton" parent="Center/Card/Margin/Column"]
+layout_mode = 2
+unique_name_in_owner = true
+
+[node name="LabelResolution" type="Label" parent="Center/Card/Margin/Column"]
+layout_mode = 2
+unique_name_in_owner = true
+text = "Resolução"
+
+[node name="Resolution" type="OptionButton" parent="Center/Card/Margin/Column"]
+layout_mode = 2
+unique_name_in_owner = true
+
+[node name="LabelMonitor" type="Label" parent="Center/Card/Margin/Column"]
+layout_mode = 2
+unique_name_in_owner = true
+text = "Monitor"
+
+[node name="Monitor" type="OptionButton" parent="Center/Card/Margin/Column"]
+layout_mode = 2
+unique_name_in_owner = true
+
+[node name="LabelMode" type="Label" parent="Center/Card/Margin/Column"]
+layout_mode = 2
+unique_name_in_owner = true
+text = "Modo de tela"
+
+[node name="DisplayMode" type="OptionButton" parent="Center/Card/Margin/Column"]
+layout_mode = 2
+unique_name_in_owner = true
+
+[node name="Back" type="Button" parent="Center/Card/Margin/Column"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 48)
+text = "Back"
+
+[node name="Dialog" type="AcceptDialog" parent="."]
+unique_name_in_owner = true
+title = "Brasfoot Godot"

@@ -1,0 +1,228 @@
+[gd_resource type="Theme" format=3 uid="uid://pnvjergvfuen"]
+
+[ext_resource type="Texture2D" uid="uid://bclvofl1f02va" path="res://art/ui/pega_slider.png" id="1_pega"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_press"]
+content_margin_left = 14.0
+content_margin_top = 8.0
+content_margin_right = 14.0
+content_margin_bottom = 8.0
+bg_color = Color(0.09, 0.26, 0.13, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.28, 0.46, 0.28, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hover"]
+content_margin_left = 14.0
+content_margin_top = 8.0
+content_margin_right = 14.0
+content_margin_bottom = 8.0
+bg_color = Color(0.26, 0.58, 0.3, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.72, 0.88, 0.55, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_color = Color(0, 0, 0, 0.28)
+shadow_size = 3
+shadow_offset = Vector2(0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_botao"]
+content_margin_left = 14.0
+content_margin_top = 8.0
+content_margin_right = 14.0
+content_margin_bottom = 8.0
+bg_color = Color(0.15, 0.42, 0.2, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.5, 0.74, 0.4, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_color = Color(0, 0, 0, 0.32)
+shadow_size = 3
+shadow_offset = Vector2(0, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_enchimento"]
+content_margin_left = 3.0
+content_margin_top = 6.0
+content_margin_right = 3.0
+content_margin_bottom = 6.0
+bg_color = Color(0.84, 0.66, 0.16, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.4, 0.3, 0.05, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_trilho_slider"]
+content_margin_left = 3.0
+content_margin_top = 6.0
+content_margin_right = 3.0
+content_margin_bottom = 6.0
+bg_color = Color(0.94, 0.95, 0.91, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.16, 0.24, 0.14, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_campo"]
+content_margin_left = 8.0
+content_margin_top = 6.0
+content_margin_right = 8.0
+content_margin_bottom = 6.0
+bg_color = Color(0.05, 0.14, 0.08, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_painel"]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+bg_color = Color(0.11, 0.28, 0.15, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.941, 0.816, 0.376, 0.28)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_trilho"]
+bg_color = Color(0.04, 0.1, 0.05, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_barra"]
+bg_color = Color(0.31, 0.75, 0.35, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aba"]
+content_margin_left = 10.0
+content_margin_top = 6.0
+content_margin_right = 10.0
+content_margin_bottom = 6.0
+bg_color = Color(0.16, 0.4, 0.2, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aba_off"]
+content_margin_left = 10.0
+content_margin_top = 6.0
+content_margin_right = 10.0
+content_margin_bottom = 6.0
+bg_color = Color(0.08, 0.2, 0.11, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dica"]
+content_margin_left = 8.0
+content_margin_top = 5.0
+content_margin_right = 8.0
+content_margin_bottom = 5.0
+bg_color = Color(1, 0.98, 0.9, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.18, 0.24, 0.14, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_polegar"]
+content_margin_left = 5.0
+content_margin_top = 10.0
+content_margin_right = 5.0
+content_margin_bottom = 10.0
+bg_color = Color(0.45, 0.68, 0.4, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="SystemFont" id="SystemFont_ui"]
+font_names = PackedStringArray("Tahoma", "Segoe UI", "Liberation Sans", "DejaVu Sans")
+
+[resource]
+default_font = SubResource("SystemFont_ui")
+default_font_size = 15
+Button/colors/font_color = Color(0.957, 0.969, 0.949, 1)
+Button/colors/font_hover_color = Color(0.957, 0.969, 0.949, 1)
+Button/colors/font_pressed_color = Color(0.957, 0.969, 0.949, 1)
+Button/styles/disabled = SubResource("StyleBoxFlat_press")
+Button/styles/focus = SubResource("StyleBoxFlat_hover")
+Button/styles/hover = SubResource("StyleBoxFlat_hover")
+Button/styles/normal = SubResource("StyleBoxFlat_botao")
+Button/styles/pressed = SubResource("StyleBoxFlat_press")
+CheckBox/colors/font_color = Color(0.957, 0.969, 0.949, 1)
+CheckBox/colors/font_hover_color = Color(0.957, 0.969, 0.949, 1)
+HSlider/constants/center_grabber = 1
+HSlider/icons/grabber = ExtResource("1_pega")
+HSlider/icons/grabber_disabled = ExtResource("1_pega")
+HSlider/icons/grabber_highlight = ExtResource("1_pega")
+HSlider/styles/grabber_area = SubResource("StyleBoxFlat_enchimento")
+HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_enchimento")
+HSlider/styles/slider = SubResource("StyleBoxFlat_trilho_slider")
+ItemList/colors/font_color = Color(0.957, 0.969, 0.949, 1)
+ItemList/colors/font_hovered_color = Color(0.98, 0.9, 0.55, 1)
+ItemList/colors/font_selected_color = Color(0.98, 0.9, 0.55, 1)
+ItemList/styles/panel = SubResource("StyleBoxFlat_campo")
+Label/colors/font_color = Color(0.957, 0.969, 0.949, 1)
+LineEdit/colors/caret_color = Color(0.98, 0.9, 0.55, 1)
+LineEdit/colors/font_color = Color(0.957, 0.969, 0.949, 1)
+LineEdit/colors/font_placeholder_color = Color(0.7, 0.78, 0.72, 1)
+LineEdit/styles/focus = SubResource("StyleBoxFlat_hover")
+LineEdit/styles/normal = SubResource("StyleBoxFlat_campo")
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_painel")
+PopupMenu/colors/font_color = Color(0.957, 0.969, 0.949, 1)
+PopupMenu/styles/panel = SubResource("StyleBoxFlat_painel")
+ProgressBar/styles/background = SubResource("StyleBoxFlat_trilho")
+ProgressBar/styles/fill = SubResource("StyleBoxFlat_barra")
+RichTextLabel/colors/default_color = Color(0.957, 0.969, 0.949, 1)
+TabContainer/colors/font_hovered_color = Color(1, 1, 1, 1)
+TabContainer/colors/font_selected_color = Color(0.98, 0.9, 0.55, 1)
+TabContainer/colors/font_unselected_color = Color(0.86, 0.9, 0.86, 1)
+TabContainer/styles/panel = SubResource("StyleBoxFlat_painel")
+TabContainer/styles/tab_hovered = SubResource("StyleBoxFlat_hover")
+TabContainer/styles/tab_selected = SubResource("StyleBoxFlat_aba")
+TabContainer/styles/tab_unselected = SubResource("StyleBoxFlat_aba_off")
+TooltipLabel/colors/font_color = Color(0.1, 0.14, 0.08, 1)
+TooltipLabel/font_sizes/font_size = 14
+TooltipPanel/styles/panel = SubResource("StyleBoxFlat_dica")
+VScrollBar/styles/grabber = SubResource("StyleBoxFlat_polegar")
+VScrollBar/styles/grabber_highlight = SubResource("StyleBoxFlat_polegar")
+VScrollBar/styles/grabber_pressed = SubResource("StyleBoxFlat_polegar")
+VScrollBar/styles/scroll = SubResource("StyleBoxFlat_trilho")
+VScrollBar/styles/scroll_focus = SubResource("StyleBoxFlat_trilho")

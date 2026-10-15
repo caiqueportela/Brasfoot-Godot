@@ -1,0 +1,1042 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/screens/SquadEditor.cs" id="1"]
+[ext_resource type="Script" path="res://scripts/components/EditorGrid.cs" id="2"]
+
+[node name="SquadEditor" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0, 0.6, 0.2, 1)
+
+[node name="Margin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="Core" type="HBoxContainer" parent="Margin"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Left" type="Control" parent="Margin/Core"]
+layout_mode = 2
+custom_minimum_size = Vector2(340, 0)
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.92
+
+[node name="LeftBackground" type="ColorRect" parent="Margin/Core/Left"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0, 0.6, 0, 1)
+
+[node name="LeftColumn" type="VBoxContainer" parent="Margin/Core/Left"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = -8.0
+theme_override_constants/separation = 8
+
+[node name="ClubGrid" type="Control" parent="Margin/Core/Left/LeftColumn"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_vertical = 3
+script = ExtResource("2")
+
+[node name="ClubActions" type="HBoxContainer" parent="Margin/Core/Left/LeftColumn"]
+layout_mode = 2
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="Add" type="Button" parent="Margin/Core/Left/LeftColumn/ClubActions"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(120, 32)
+size_flags_horizontal = 3
+text = "adicionar"
+
+[node name="Edit" type="Button" parent="Margin/Core/Left/LeftColumn/ClubActions"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 32)
+size_flags_horizontal = 3
+text = "editar"
+
+[node name="Delete" type="Button" parent="Margin/Core/Left/LeftColumn/ClubActions"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 32)
+size_flags_horizontal = 3
+text = "deletar"
+
+[node name="Search" type="Control" parent="Margin/Core/Left/LeftColumn"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 148)
+size_flags_horizontal = 3
+
+[node name="SearchBackground" type="ColorRect" parent="Margin/Core/Left/LeftColumn/Search"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0, 0.4, 0.2, 1)
+
+[node name="SearchMargin" type="MarginContainer" parent="Margin/Core/Left/LeftColumn/Search"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="SearchColumn" type="VBoxContainer" parent="Margin/Core/Left/LeftColumn/Search/SearchMargin"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="ClubRow" type="HBoxContainer" parent="Margin/Core/Left/LeftColumn/Search/SearchMargin/SearchColumn"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="LabelClub" type="Label" parent="Margin/Core/Left/LeftColumn/Search/SearchMargin/SearchColumn/ClubRow"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(130, 0)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Procurar time:"
+horizontal_alignment = 2
+
+[node name="ClubSearchText" type="LineEdit" parent="Margin/Core/Left/LeftColumn/Search/SearchMargin/SearchColumn/ClubRow"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_horizontal = 3
+
+[node name="ClubSearch" type="Button" parent="Margin/Core/Left/LeftColumn/Search/SearchMargin/SearchColumn/ClubRow"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(40, 28)
+
+[node name="PlayerRow" type="HBoxContainer" parent="Margin/Core/Left/LeftColumn/Search/SearchMargin/SearchColumn"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="LabelPlayer" type="Label" parent="Margin/Core/Left/LeftColumn/Search/SearchMargin/SearchColumn/PlayerRow"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(130, 0)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Procurar jogador:"
+horizontal_alignment = 2
+
+[node name="PlayerSearchText" type="LineEdit" parent="Margin/Core/Left/LeftColumn/Search/SearchMargin/SearchColumn/PlayerRow"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_horizontal = 3
+
+[node name="PlayerSearch" type="Button" parent="Margin/Core/Left/LeftColumn/Search/SearchMargin/SearchColumn/PlayerRow"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(40, 28)
+
+[node name="LabelShow" type="Label" parent="Margin/Core/Left/LeftColumn/Search/SearchMargin/SearchColumn"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Mostrar times:"
+
+[node name="Filters" type="HBoxContainer" parent="Margin/Core/Left/LeftColumn/Search/SearchMargin/SearchColumn"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="MissingCrest" type="Button" parent="Margin/Core/Left/LeftColumn/Search/SearchMargin/SearchColumn/Filters"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_horizontal = 3
+text = "sem escudo"
+
+[node name="MissingShirts" type="Button" parent="Margin/Core/Left/LeftColumn/Search/SearchMargin/SearchColumn/Filters"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_horizontal = 3
+text = "sem camisas"
+
+[node name="Duplicates" type="Button" parent="Margin/Core/Left/LeftColumn/Search/SearchMargin/SearchColumn/Filters"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_horizontal = 3
+text = "jogadores duplicados"
+
+[node name="LeftFooter" type="HBoxContainer" parent="Margin/Core/Left/LeftColumn"]
+layout_mode = 2
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="Home" type="Button" parent="Margin/Core/Left/LeftColumn/LeftFooter"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(110, 34)
+text = "início"
+
+[node name="Quit" type="Button" parent="Margin/Core/Left/LeftColumn/LeftFooter"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(120, 34)
+text = "sair jogo"
+
+[node name="Right" type="Control" parent="Margin/Core"]
+layout_mode = 2
+custom_minimum_size = Vector2(420, 0)
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 1.25
+
+[node name="ClubBackgroundRect" type="ColorRect" parent="Margin/Core/Right"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.6, 0.05, 0.05, 1)
+
+[node name="RightColumn" type="VBoxContainer" parent="Margin/Core/Right"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 6.0
+offset_right = -8.0
+offset_bottom = -6.0
+theme_override_constants/separation = 4
+
+[node name="Head" type="HBoxContainer" parent="Margin/Core/Right/RightColumn"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Info" type="VBoxContainer" parent="Margin/Core/Right/RightColumn/Head"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 2
+
+[node name="Name" type="Label" parent="Margin/Core/Right/RightColumn/Head/Info"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 18
+text = "Time"
+
+[node name="Reputation" type="Label" parent="Margin/Core/Right/RightColumn/Head/Info"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Nacional"
+
+[node name="CardBody" type="GridContainer" parent="Margin/Core/Right/RightColumn/Head/Info"]
+layout_mode = 2
+theme_override_constants/h_separation = 8
+theme_override_constants/v_separation = 2
+columns = 2
+
+[node name="CountryFlag" type="TextureRect" parent="Margin/Core/Right/RightColumn/Head/Info/CardBody"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(48, 20)
+size_flags_horizontal = 0
+expand_mode = 0
+stretch_mode = 2
+
+[node name="Country" type="Label" parent="Margin/Core/Right/RightColumn/Head/Info/CardBody"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Country"
+
+[node name="StateFlag" type="TextureRect" parent="Margin/Core/Right/RightColumn/Head/Info/CardBody"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(48, 20)
+size_flags_horizontal = 0
+expand_mode = 0
+stretch_mode = 2
+
+[node name="State" type="Label" parent="Margin/Core/Right/RightColumn/Head/Info/CardBody"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "State"
+
+[node name="StadiumIcon" type="TextureRect" parent="Margin/Core/Right/RightColumn/Head/Info/CardBody"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(48, 20)
+size_flags_horizontal = 0
+expand_mode = 0
+stretch_mode = 2
+
+[node name="Stadium" type="Label" parent="Margin/Core/Right/RightColumn/Head/Info/CardBody"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Estádio"
+
+[node name="CapacityGap" type="Control" parent="Margin/Core/Right/RightColumn/Head/Info/CardBody"]
+layout_mode = 2
+custom_minimum_size = Vector2(48, 0)
+
+[node name="Capacity" type="Label" parent="Margin/Core/Right/RightColumn/Head/Info/CardBody"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "0 lugares"
+
+[node name="CoachIcons" type="HBoxContainer" parent="Margin/Core/Right/RightColumn/Head/Info/CardBody"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="CoachIcon" type="TextureRect" parent="Margin/Core/Right/RightColumn/Head/Info/CardBody/CoachIcons"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(20, 20)
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CoachFlag" type="TextureRect" parent="Margin/Core/Right/RightColumn/Head/Info/CardBody/CoachIcons"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(20, 20)
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Coach" type="Label" parent="Margin/Core/Right/RightColumn/Head/Info/CardBody"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Técnico"
+
+[node name="Side" type="VBoxContainer" parent="Margin/Core/Right/RightColumn/Head"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="LevelRow" type="HBoxContainer" parent="Margin/Core/Right/RightColumn/Head/Side"]
+layout_mode = 2
+theme_override_constants/separation = 8
+alignment = 2
+
+[node name="Level" type="Label" parent="Margin/Core/Right/RightColumn/Head/Side/LevelRow"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 22
+text = "0"
+
+[node name="Crest" type="TextureRect" parent="Margin/Core/Right/RightColumn/Head/Side/LevelRow"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(72, 72)
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Shirts" type="HBoxContainer" parent="Margin/Core/Right/RightColumn/Head/Side"]
+layout_mode = 2
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="Shirt1" type="TextureRect" parent="Margin/Core/Right/RightColumn/Head/Side/Shirts"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(42, 48)
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Shirt2" type="TextureRect" parent="Margin/Core/Right/RightColumn/Head/Side/Shirts"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(42, 48)
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Shirt3" type="TextureRect" parent="Margin/Core/Right/RightColumn/Head/Side/Shirts"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(42, 48)
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Tabs" type="HBoxContainer" parent="Margin/Core/Right/RightColumn"]
+layout_mode = 2
+alignment = 2
+theme_override_constants/separation = 6
+
+[node name="FirstTeam" type="Button" parent="Margin/Core/Right/RightColumn/Tabs"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(120, 30)
+text = "FirstTeam"
+
+[node name="Youth" type="Button" parent="Margin/Core/Right/RightColumn/Tabs"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(120, 30)
+text = "Youth"
+
+[node name="PlayerGrid" type="Control" parent="Margin/Core/Right/RightColumn"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_vertical = 3
+script = ExtResource("2")
+
+[node name="Footer" type="VBoxContainer" parent="Margin/Core/Right/RightColumn"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="PlayersRow" type="HBoxContainer" parent="Margin/Core/Right/RightColumn/Footer"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="CountIcon" type="TextureRect" parent="Margin/Core/Right/RightColumn/Footer/PlayersRow"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(18, 18)
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Count" type="Label" parent="Margin/Core/Right/RightColumn/Footer/PlayersRow"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "0/30"
+
+[node name="StartersIcon" type="TextureRect" parent="Margin/Core/Right/RightColumn/Footer/PlayersRow"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(18, 18)
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Starters" type="Label" parent="Margin/Core/Right/RightColumn/Footer/PlayersRow"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "0"
+
+[node name="AddPlayer" type="Button" parent="Margin/Core/Right/RightColumn/Footer/PlayersRow"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(36, 30)
+
+[node name="EditPlayer" type="Button" parent="Margin/Core/Right/RightColumn/Footer/PlayersRow"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(36, 30)
+
+[node name="DeletePlayer" type="Button" parent="Margin/Core/Right/RightColumn/Footer/PlayersRow"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(36, 30)
+
+[node name="RandomGroup" type="PanelContainer" parent="Margin/Core/Right/RightColumn/Footer"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_horizontal = 0
+
+[node name="RandomRow" type="HBoxContainer" parent="Margin/Core/Right/RightColumn/Footer/RandomGroup"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Random" type="Button" parent="Margin/Core/Right/RightColumn/Footer/RandomGroup/RandomRow"]
+layout_mode = 2
+unique_name_in_owner = true
+text = "Criar aleatório"
+
+[node name="AtPosition" type="Label" parent="Margin/Core/Right/RightColumn/Footer/RandomGroup/RandomRow"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "na posição"
+
+[node name="RandomPosition" type="OptionButton" parent="Margin/Core/Right/RightColumn/Footer/RandomGroup/RandomRow"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(140, 0)
+
+[node name="Created" type="Label" parent="Margin/Core/Right/RightColumn/Footer/RandomGroup/RandomRow"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+
+[node name="ClubForm" type="ColorRect" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0, 0, 0, 0.35)
+
+[node name="ClubCenter" type="CenterContainer" parent="ClubForm"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ClubCard" type="PanelContainer" parent="ClubForm/ClubCenter"]
+layout_mode = 2
+custom_minimum_size = Vector2(520, 0)
+
+[node name="CardBackground" type="ColorRect" parent="ClubForm/ClubCenter/ClubCard"]
+layout_mode = 2
+mouse_filter = 2
+color = Color(0.2, 0.4, 0, 1)
+
+[node name="ClubMargin" type="MarginContainer" parent="ClubForm/ClubCenter/ClubCard"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 12
+
+[node name="ClubColumn" type="VBoxContainer" parent="ClubForm/ClubCenter/ClubCard/ClubMargin"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="ClubTitle" type="Label" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 18
+horizontal_alignment = 1
+text = "Adicionar Time"
+
+[node name="ClubGridBody" type="GridContainer" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn"]
+layout_mode = 2
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 6
+columns = 2
+
+[node name="LabelClubName" type="Label" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn/ClubGridBody"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Nome:"
+horizontal_alignment = 2
+
+[node name="ClubName" type="LineEdit" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn/ClubGridBody"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(280, 0)
+
+[node name="LabelClubCoach" type="Label" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn/ClubGridBody"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Nome do Técnico:"
+horizontal_alignment = 2
+
+[node name="ClubCoach" type="LineEdit" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn/ClubGridBody"]
+layout_mode = 2
+unique_name_in_owner = true
+
+[node name="LabelClubStadium" type="Label" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn/ClubGridBody"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Nome do Estádio:"
+horizontal_alignment = 2
+
+[node name="ClubStadium" type="LineEdit" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn/ClubGridBody"]
+layout_mode = 2
+unique_name_in_owner = true
+
+[node name="LabelClubCapacity" type="Label" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn/ClubGridBody"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Capacidade:"
+horizontal_alignment = 2
+
+[node name="ClubCapacity" type="LineEdit" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn/ClubGridBody"]
+layout_mode = 2
+unique_name_in_owner = true
+
+[node name="LabelClubLevel" type="Label" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn/ClubGridBody"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Nível inicial:"
+horizontal_alignment = 2
+
+[node name="ClubLevel" type="OptionButton" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn/ClubGridBody"]
+layout_mode = 2
+unique_name_in_owner = true
+
+[node name="LabelClubReputation" type="Label" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn/ClubGridBody"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Reputação:"
+horizontal_alignment = 2
+
+[node name="ClubReputation" type="OptionButton" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn/ClubGridBody"]
+layout_mode = 2
+unique_name_in_owner = true
+
+[node name="LabelClubCountry" type="Label" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn/ClubGridBody"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Pais do time:"
+horizontal_alignment = 2
+
+[node name="ClubCountry" type="OptionButton" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn/ClubGridBody"]
+layout_mode = 2
+unique_name_in_owner = true
+
+[node name="LabelCoachCountry" type="Label" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn/ClubGridBody"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "País do técnico:"
+horizontal_alignment = 2
+
+[node name="ClubCoachCountry" type="OptionButton" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn/ClubGridBody"]
+layout_mode = 2
+unique_name_in_owner = true
+
+[node name="ClubStateRow" type="HBoxContainer" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn"]
+layout_mode = 2
+unique_name_in_owner = true
+
+[node name="LabelClubState" type="Label" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn/ClubStateRow"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 0)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Estado:"
+horizontal_alignment = 2
+
+[node name="ClubState" type="OptionButton" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn/ClubStateRow"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_horizontal = 3
+
+[node name="LabelClubFile" type="Label" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn/ClubGridBody"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Arquivo:"
+horizontal_alignment = 2
+
+[node name="ClubFile" type="LineEdit" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn/ClubGridBody"]
+layout_mode = 2
+unique_name_in_owner = true
+
+[node name="LabelClubText" type="Label" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn/ClubGridBody"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Cor de Texto:"
+horizontal_alignment = 2
+
+[node name="ClubTextColor" type="ColorPickerButton" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn/ClubGridBody"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(80, 28)
+color = Color(1, 1, 1, 1)
+
+[node name="LabelClubBackground" type="Label" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn/ClubGridBody"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Cor de Fundo:"
+horizontal_alignment = 2
+
+[node name="ClubBackground" type="ColorPickerButton" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn/ClubGridBody"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(80, 28)
+color = Color(0.8, 0, 0, 1)
+
+[node name="ClubError" type="Label" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(1, 0.85, 0.4, 1)
+autowrap_mode = 2
+
+[node name="ClubButtons" type="HBoxContainer" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn"]
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 12
+
+[node name="ClubOk" type="Button" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn/ClubButtons"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 32)
+text = "OK"
+
+[node name="ClubCancel" type="Button" parent="ClubForm/ClubCenter/ClubCard/ClubMargin/ClubColumn/ClubButtons"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 32)
+text = "Cancel"
+
+[node name="PlayerForm" type="ColorRect" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0, 0, 0, 0.35)
+
+[node name="PlayerCenter" type="CenterContainer" parent="PlayerForm"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="PlayerCard" type="PanelContainer" parent="PlayerForm/PlayerCenter"]
+layout_mode = 2
+custom_minimum_size = Vector2(720, 0)
+
+[node name="PlayerBackground" type="ColorRect" parent="PlayerForm/PlayerCenter/PlayerCard"]
+layout_mode = 2
+mouse_filter = 2
+color = Color(0.2, 0.45, 0, 1)
+
+[node name="PlayerMargin" type="MarginContainer" parent="PlayerForm/PlayerCenter/PlayerCard"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 12
+
+[node name="PlayerColumn" type="VBoxContainer" parent="PlayerForm/PlayerCenter/PlayerCard/PlayerMargin"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="PlayerTitle" type="Label" parent="PlayerForm/PlayerCenter/PlayerCard/PlayerMargin/PlayerColumn"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 18
+horizontal_alignment = 1
+text = "Adicionar Jogador"
+
+[node name="PlayerNameRow" type="HBoxContainer" parent="PlayerForm/PlayerCenter/PlayerCard/PlayerMargin/PlayerColumn"]
+layout_mode = 2
+[node name="LabelPlayerName" type="Label" parent="PlayerForm/PlayerCenter/PlayerCard/PlayerMargin/PlayerColumn/PlayerNameRow"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(110, 0)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Nome:"
+horizontal_alignment = 2
+
+[node name="PlayerName" type="LineEdit" parent="PlayerForm/PlayerCenter/PlayerCard/PlayerMargin/PlayerColumn/PlayerNameRow"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_horizontal = 3
+
+[node name="PlayerPositionRow" type="HBoxContainer" parent="PlayerForm/PlayerCenter/PlayerCard/PlayerMargin/PlayerColumn"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="LabelPlayerPosition" type="Label" parent="PlayerForm/PlayerCenter/PlayerCard/PlayerMargin/PlayerColumn/PlayerPositionRow"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(110, 0)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Posição:"
+horizontal_alignment = 2
+
+[node name="PlayerPosition" type="OptionButton" parent="PlayerForm/PlayerCenter/PlayerCard/PlayerMargin/PlayerColumn/PlayerPositionRow"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(130, 0)
+
+[node name="LabelPlayerSide" type="Label" parent="PlayerForm/PlayerCenter/PlayerCard/PlayerMargin/PlayerColumn/PlayerPositionRow"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Lado:"
+
+[node name="PlayerSide" type="OptionButton" parent="PlayerForm/PlayerCenter/PlayerCard/PlayerMargin/PlayerColumn/PlayerPositionRow"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 0)
+
+[node name="PlayerCountryRow" type="HBoxContainer" parent="PlayerForm/PlayerCenter/PlayerCard/PlayerMargin/PlayerColumn"]
+layout_mode = 2
+[node name="LabelPlayerCountry" type="Label" parent="PlayerForm/PlayerCenter/PlayerCard/PlayerMargin/PlayerColumn/PlayerCountryRow"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(110, 0)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Pais:"
+horizontal_alignment = 2
+
+[node name="PlayerCountry" type="OptionButton" parent="PlayerForm/PlayerCenter/PlayerCard/PlayerMargin/PlayerColumn/PlayerCountryRow"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_horizontal = 3
+
+[node name="PlayerTraitRow" type="HBoxContainer" parent="PlayerForm/PlayerCenter/PlayerCard/PlayerMargin/PlayerColumn"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="RC1" type="Label" parent="PlayerForm/PlayerCenter/PlayerCard/PlayerMargin/PlayerColumn/PlayerTraitRow"]
+layout_mode = 2
+custom_minimum_size = Vector2(110, 0)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Caract:"
+horizontal_alignment = 2
+
+[node name="PlayerTrait1" type="OptionButton" parent="PlayerForm/PlayerCenter/PlayerCard/PlayerMargin/PlayerColumn/PlayerTraitRow"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_horizontal = 3
+
+[node name="RC2" type="Label" parent="PlayerForm/PlayerCenter/PlayerCard/PlayerMargin/PlayerColumn/PlayerTraitRow"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Caract:"
+
+[node name="PlayerTrait2" type="OptionButton" parent="PlayerForm/PlayerCenter/PlayerCard/PlayerMargin/PlayerColumn/PlayerTraitRow"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_horizontal = 3
+
+[node name="PlayerAgeRow" type="HBoxContainer" parent="PlayerForm/PlayerCenter/PlayerCard/PlayerMargin/PlayerColumn"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="LabelPlayerAge" type="Label" parent="PlayerForm/PlayerCenter/PlayerCard/PlayerMargin/PlayerColumn/PlayerAgeRow"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(110, 0)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Idade:"
+horizontal_alignment = 2
+
+[node name="PlayerAge" type="HSlider" parent="PlayerForm/PlayerCenter/PlayerCard/PlayerMargin/PlayerColumn/PlayerAgeRow"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(180, 28)
+size_flags_horizontal = 3
+min_value = 16.0
+max_value = 48.0
+value = 20.0
+
+[node name="PlayerAgeValue" type="Label" parent="PlayerForm/PlayerCenter/PlayerCard/PlayerMargin/PlayerColumn/PlayerAgeRow"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(28, 0)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "20"
+
+[node name="PlayerMarksRow" type="HBoxContainer" parent="PlayerForm/PlayerCenter/PlayerCard/PlayerMargin/PlayerColumn"]
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 16
+
+[node name="PlayerStar" type="CheckBox" parent="PlayerForm/PlayerCenter/PlayerCard/PlayerMargin/PlayerColumn/PlayerMarksRow"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Estrela"
+
+[node name="PlayerTop" type="CheckBox" parent="PlayerForm/PlayerCenter/PlayerCard/PlayerMargin/PlayerColumn/PlayerMarksRow"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Top Mundial"
+
+[node name="PlayerKeep" type="CheckBox" parent="PlayerForm/PlayerCenter/PlayerCard/PlayerMargin/PlayerColumn/PlayerMarksRow"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(1, 1, 0.8, 1)
+text = "Continuar adicionando"
+
+[node name="PlayerError" type="Label" parent="PlayerForm/PlayerCenter/PlayerCard/PlayerMargin/PlayerColumn"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(1, 0.85, 0.4, 1)
+
+[node name="PlayerButtons" type="HBoxContainer" parent="PlayerForm/PlayerCenter/PlayerCard/PlayerMargin/PlayerColumn"]
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 12
+
+[node name="PlayerOk" type="Button" parent="PlayerForm/PlayerCenter/PlayerCard/PlayerMargin/PlayerColumn/PlayerButtons"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 32)
+text = "OK"
+
+[node name="PlayerCancel" type="Button" parent="PlayerForm/PlayerCenter/PlayerCard/PlayerMargin/PlayerColumn/PlayerButtons"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 32)
+text = "Cancel"
+
+[node name="TransferForm" type="ColorRect" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0, 0, 0, 0.35)
+
+[node name="TransferCenter" type="CenterContainer" parent="TransferForm"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="TransferCard" type="PanelContainer" parent="TransferForm/TransferCenter"]
+layout_mode = 2
+custom_minimum_size = Vector2(360, 420)
+
+[node name="TransferBackground" type="ColorRect" parent="TransferForm/TransferCenter/TransferCard"]
+layout_mode = 2
+mouse_filter = 2
+color = Color(0.2, 0.4, 0, 1)
+
+[node name="TransferMargin" type="MarginContainer" parent="TransferForm/TransferCenter/TransferCard"]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="TransferColumn" type="VBoxContainer" parent="TransferForm/TransferCenter/TransferCard/TransferMargin"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="TransferTitle" type="Label" parent="TransferForm/TransferCenter/TransferCard/TransferMargin/TransferColumn"]
+layout_mode = 2
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 16
+horizontal_alignment = 1
+text = "Transferir jogador"
+
+[node name="TransferClubs" type="ItemList" parent="TransferForm/TransferCenter/TransferCard/TransferMargin/TransferColumn"]
+layout_mode = 2
+unique_name_in_owner = true
+size_flags_vertical = 3
+
+[node name="TransferButtons" type="HBoxContainer" parent="TransferForm/TransferCenter/TransferCard/TransferMargin/TransferColumn"]
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 12
+
+[node name="TransferOk" type="Button" parent="TransferForm/TransferCenter/TransferCard/TransferMargin/TransferColumn/TransferButtons"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(90, 32)
+text = "OK"
+
+[node name="TransferCancel" type="Button" parent="TransferForm/TransferCenter/TransferCard/TransferMargin/TransferColumn/TransferButtons"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 32)
+text = "Cancel"
+
+[node name="Confirm" type="ColorRect" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0, 0, 0, 0.35)
+
+[node name="ConfirmCenter" type="CenterContainer" parent="Confirm"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ConfirmCard" type="PanelContainer" parent="Confirm/ConfirmCenter"]
+layout_mode = 2
+custom_minimum_size = Vector2(420, 0)
+
+[node name="ConfirmBackground" type="ColorRect" parent="Confirm/ConfirmCenter/ConfirmCard"]
+layout_mode = 2
+mouse_filter = 2
+color = Color(0.2, 0.4, 0, 1)
+
+[node name="ConfirmBoxMargin" type="MarginContainer" parent="Confirm/ConfirmCenter/ConfirmCard"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="ConfirmColumn" type="VBoxContainer" parent="Confirm/ConfirmCenter/ConfirmCard/ConfirmBoxMargin"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="ConfirmText" type="Label" parent="Confirm/ConfirmCenter/ConfirmCard/ConfirmBoxMargin/ConfirmColumn"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(380, 0)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+autowrap_mode = 2
+text = "Apagar o time?"
+
+[node name="ConfirmButtons" type="HBoxContainer" parent="Confirm/ConfirmCenter/ConfirmCard/ConfirmBoxMargin/ConfirmColumn"]
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 12
+
+[node name="ConfirmYes" type="Button" parent="Confirm/ConfirmCenter/ConfirmCard/ConfirmBoxMargin/ConfirmColumn/ConfirmButtons"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 32)
+text = "DeleteFile"
+
+[node name="ConfirmNo" type="Button" parent="Confirm/ConfirmCenter/ConfirmCard/ConfirmBoxMargin/ConfirmColumn/ConfirmButtons"]
+layout_mode = 2
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 32)
+text = "Cancel"
+
+[node name="PlayerMenu" type="PopupMenu" parent="."]
+unique_name_in_owner = true
+
+[node name="Dialog" type="AcceptDialog" parent="."]
+unique_name_in_owner = true
+title = "Brasfoot Godot"

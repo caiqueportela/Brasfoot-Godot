@@ -1,0 +1,219 @@
+[gd_scene format=3 uid="uid://cpwkeu4aitcvi"]
+
+[ext_resource type="Script" uid="uid://bgi2y5ofkdcuo" path="res://scripts/screens/MainMenu.cs" id="1"]
+[ext_resource type="Texture2D" uid="uid://si2spe63b83j" path="res://art/menu/fundo.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://c1qhqbd86qssf" path="res://art/menu/icone_novo.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://crv3sptmmjotu" path="res://art/menu/icone_salvo.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://bisfhkoag4g5p" path="res://art/menu/icone_editor.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://c0v7u54snnitv" path="res://art/menu/icone_config.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://c5rw5jh3hqrcy" path="res://art/menu/icone_sair.png" id="7"]
+
+[sub_resource type="SystemFont" id="FonteMenu"]
+font_names = PackedStringArray("Arial", "Arial Black", "Segoe UI", "Tahoma")
+font_weight = 800
+hinting = 0
+subpixel_positioning = 0
+
+[node name="MainMenu" type="Control" unique_id=1434897539]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1874656157]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0.07, 0, 1)
+
+[node name="Stage" type="Control" parent="." unique_id=899324206]
+unique_name_in_owner = true
+anchors_preset = 0
+offset_right = 532.0
+offset_bottom = 300.0
+
+[node name="Backdrop" type="TextureRect" parent="Stage" unique_id=687699904]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Year" type="Label" parent="Stage" unique_id=1248776343]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 36.0
+offset_top = 60.0
+offset_right = 120.0
+offset_bottom = 78.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("FonteMenu")
+theme_override_font_sizes/font_size = 13
+text = "Godot"
+
+[node name="NewGame" type="Button" parent="Stage" unique_id=1889952351]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 20.0
+offset_top = 104.0
+offset_right = 176.0
+offset_bottom = 200.0
+
+[node name="Icon" type="TextureRect" parent="Stage/NewGame" unique_id=506803268]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 2.0
+offset_right = 110.0
+offset_bottom = 66.0
+mouse_filter = 2
+texture = ExtResource("3")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Caption" type="Label" parent="Stage/NewGame" unique_id=1264888829]
+layout_mode = 0
+offset_top = 68.0
+offset_right = 156.0
+offset_bottom = 92.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("FonteMenu")
+theme_override_font_sizes/font_size = 14
+text = "NOVO JOGO"
+horizontal_alignment = 1
+
+[node name="Load" type="Button" parent="Stage" unique_id=1302089680]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 193.0
+offset_top = 106.0
+offset_right = 363.0
+offset_bottom = 200.0
+
+[node name="Icon" type="TextureRect" parent="Stage/Load" unique_id=846066255]
+layout_mode = 0
+offset_left = 57.0
+offset_top = 3.0
+offset_right = 114.0
+offset_bottom = 60.0
+mouse_filter = 2
+texture = ExtResource("4")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Caption" type="Label" parent="Stage/Load" unique_id=46057119]
+layout_mode = 0
+offset_top = 66.0
+offset_right = 170.0
+offset_bottom = 90.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("FonteMenu")
+theme_override_font_sizes/font_size = 14
+text = "JOGO SALVO"
+horizontal_alignment = 1
+
+[node name="Editor" type="Button" parent="Stage" unique_id=690146021]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 370.0
+offset_top = 104.0
+offset_right = 520.0
+offset_bottom = 200.0
+
+[node name="Icon" type="TextureRect" parent="Stage/Editor" unique_id=465143926]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 2.0
+offset_right = 125.0
+offset_bottom = 64.0
+mouse_filter = 2
+texture = ExtResource("5")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Caption" type="Label" parent="Stage/Editor" unique_id=733611136]
+layout_mode = 0
+offset_top = 68.0
+offset_right = 150.0
+offset_bottom = 92.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("FonteMenu")
+theme_override_font_sizes/font_size = 14
+text = "EDITOR"
+horizontal_alignment = 1
+
+[node name="Config" type="Button" parent="Stage" unique_id=1025286299]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 38.0
+offset_top = 208.0
+offset_right = 162.0
+offset_bottom = 286.0
+
+[node name="Icon" type="TextureRect" parent="Stage/Config" unique_id=524862688]
+layout_mode = 0
+offset_left = 36.0
+offset_right = 88.0
+offset_bottom = 52.0
+mouse_filter = 2
+texture = ExtResource("6")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Caption" type="Label" parent="Stage/Config" unique_id=1047242177]
+layout_mode = 0
+offset_top = 52.0
+offset_right = 124.0
+offset_bottom = 76.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("FonteMenu")
+theme_override_font_sizes/font_size = 14
+text = "CONFIG"
+horizontal_alignment = 1
+
+[node name="Quit" type="Button" parent="Stage" unique_id=1331112273]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 416.0
+offset_top = 256.0
+offset_right = 524.0
+offset_bottom = 288.0
+
+[node name="Icon" type="TextureRect" parent="Stage/Quit" unique_id=343252952]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 26.0
+offset_bottom = 26.0
+mouse_filter = 2
+texture = ExtResource("7")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Caption" type="Label" parent="Stage/Quit" unique_id=1162203563]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 2.0
+offset_right = 104.0
+offset_bottom = 28.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("FonteMenu")
+theme_override_font_sizes/font_size = 14
+text = "SAIR"
+vertical_alignment = 1
+
+[node name="Dialog" type="AcceptDialog" parent="." unique_id=1062957614]
+unique_name_in_owner = true
+title = "Brasfoot Godot"
+ok_button_text = "Continue"

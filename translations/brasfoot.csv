@@ -1,0 +1,316 @@
+keys,pt,en,es
+menu.year,Godot,Godot,Godot
+menu.new_game,NOVO JOGO,NEW GAME,NUEVO JUEGO
+menu.load,JOGO SALVO,SAVED GAME,JUEGO GUARDADO
+menu.editor,EDITOR,EDITOR,EDITOR
+menu.settings,CONFIG,SETTINGS,AJUSTES
+menu.quit,SAIR,QUIT,SALIR
+menu.tip.new_game,Começar uma carreira,Start a career,Empezar una carrera
+menu.tip.load,Abrir um jogo salvo,Open a saved game,Abrir un juego guardado
+menu.tip.editor,Editar times e jogadores,Edit clubs and players,Editar clubes y jugadores
+menu.tip.settings,Volume idioma e vídeo,Volume language and video,Volumen idioma y vídeo
+menu.tip.quit,Fechar o jogo,Quit the game,Cerrar el juego
+settings.title,Configurações,Settings,Configuración
+settings.volume,Volume,Volume,Volumen
+settings.language,Idioma,Language,Idioma
+settings.resolution,Resolução,Resolution,Resolución
+settings.monitor,Monitor,Monitor,Monitor
+settings.mode,Modo de tela,Display mode,Modo de pantalla
+settings.window,Janela,Window,Ventana
+settings.borderless,Janela sem bordas,Borderless window,Ventana sin bordes
+settings.fullscreen,Tela cheia,Fullscreen,Pantalla completa
+settings.back,Voltar,Back,Volver
+settings.monitor_name,Monitor {0} ({1}x{2}),Monitor {0} ({1}x{2}),Monitor {0} ({1}x{2})
+new_game.title,Novo jogo,New game,Nuevo juego
+new_game.country,País,Country,País
+new_game.division,Divisão,Division,División
+new_game.coach,Técnico,Manager,Entrenador
+new_game.state_cup,Campeonato estadual,State championship,Campeonato estatal
+new_game.cup,Copa nacional,National cup,Copa nacional
+new_game.continental,Competição continental,Continental competition,Competición continental
+new_game.add,Adicionar clube,Add club,Añadir club
+new_game.start,Começar carreira,Start career,Empezar carrera
+new_game.back,Voltar,Back,Volver
+new_game.humans,Clubes:,Clubs:,Clubes:
+new_game.choose,Escolha um clube na lista.,Pick a club from the list.,Elige un club de la lista.
+new_game.limit,Dá para comandar até 4 clubes.,You can manage up to 4 clubs.,Puedes dirigir hasta 4 clubes.
+load.title,Jogos salvos,Saved games,Partidas guardadas
+load.open,Abrir,Open,Abrir
+load.delete,Apagar,Delete,Borrar
+load.back,Voltar,Back,Volver
+load.empty,Nenhuma carreira salva.,No saved careers.,Ninguna carrera guardada.
+load.choose,Escolha um save.,Choose a save.,Elige una partida.
+load.invalid,Não foi possível abrir esse save.,This save could not be opened.,No se pudo abrir esta partida.
+save.title,Salvar carreira,Save career,Guardar carrera
+save.ok,Salvar,Save,Guardar
+save.done,Salvo em {0}.,Saved as {0}.,Guardado como {0}.
+save.error,Não foi possível gravar.,Could not save.,No se pudo guardar.
+office.continue,Continuar,Continue,Continuar
+office.coach,Técnico:,Manager:,Entrenador:
+office.confidence,Confiança,Confidence,Confianza
+office.fitness,Condição do elenco,Squad fitness,Condición de la plantilla
+office.next,Próximo jogo,Next match,Próximo partido
+office.home,casa,home,casa
+office.away,fora,away,fuera
+office.no_match,Nenhum jogo marcado.,No match scheduled.,Ningún partido marcado.
+office.no_club,Sem clube,No club,Sin club
+office.save,Salvar,Save,Guardar
+office.quit,Menu,Menu,Menú
+office.quit_confirm,Voltar ao menu sem salvar?,Return to the menu without saving?,¿Volver al menú sin guardar?
+office.quit_yes,Sair sem salvar,Leave without saving,Salir sin guardar
+office.cancel,Cancelar,Cancel,Cancelar
+office.auto,Automática,Automatic,Automática
+office.lineup_auto,Escalação automática,Automatic lineup,Alineación automática
+office.lineup_count,{0} escolhidos,{0} selected,{0} elegidos
+office.formation,Formação,Formation,Formación
+office.tactic,Tática,Tactic,Táctica
+office.lineup_hint,Clique em um jogador para colocar ou tirar dos 11. A formação completa o que faltar.,Click a player to add or remove him from the XI. The formation fills the rest.,Haz clic en un jugador para ponerlo o quitarlo del once. La formación completa el resto.
+office.scorers,Artilharia,Top scorers,Goleadores
+office.results,Resultados,Results,Resultados
+office.upcoming,Próximos,Upcoming,Próximos
+office.funds,Caixa: {0},Balance: {0},Caja: {0}
+office.wages,Folha mensal: {0},Monthly wages: {0},Nómina mensual: {0}
+office.sponsor,Patrocínio mensal: {0},Monthly sponsor: {0},Patrocinio mensual: {0}
+office.squad_value,Valor do elenco: {0},Squad value: {0},Valor de la plantilla: {0}
+office.stadium,Estádio: {0} ({1}),Stadium: {0} ({1}),Estadio: {0} ({1})
+office.gate,A folha sai no dia 1 junto com o patrocínio. A bilheteria entra depois de cada jogo em casa.,Wages and the sponsor are settled on the 1st. Gate receipts come in after each home match.,La nómina y el patrocinio se liquidan el día 1. La taquilla entra tras cada partido en casa.
+office.top_earners,Maiores salários,Top wages,Mayores sueldos
+office.search,Buscar jogador ou clube,Search player or club,Buscar jugador o club
+office.your_squad,Seu elenco à venda,Your listed players,Tu plantilla en venta
+office.listed,[listado],[listed],[listado]
+office.for_sale,[à venda],[for sale],[en venta]
+office.send,Enviar proposta,Send offer,Enviar oferta
+office.asking_price,Pedido {0} · caixa {1},Asking price {0} · balance {1},Pedido {0} · caja {1}
+office.physical,Físico — recupera a condição do elenco,Fitness — restores squad condition,Físico — recupera la condición de la plantilla
+office.tactical,Tático — sobe a confiança do grupo,Tactical — raises team confidence,Táctico — sube la confianza del grupo
+office.technical,Técnico — pode evoluir a força de parte do elenco,Technical — may raise the strength of some players,Técnico — puede mejorar la fuerza de parte de la plantilla
+office.already_trained,O elenco já treinou neste intervalo.,The squad already trained in this break.,La plantilla ya entrenó en este intervalo.
+office.can_train,Escolha o foco do treino antes do próximo jogo.,Choose the training focus before the next match.,Elige el foco del entrenamiento antes del próximo partido.
+office.speed,Velocidade da partida,Match speed,Velocidad del partido
+office.sound,Efeitos sonoros,Sound effects,Efectos de sonido
+office.language,Idioma,Language,Idioma
+office.cloud,Preparar sincronização,Prepare sync,Preparar sincronización
+office.cloud_hint,Quando ligado os saves e o catálogo entram numa fila local. O envio pela internet fica para o serviço futuro.,When on saves and the catalog are queued locally. Upload comes with a future service.,Si está activo los saves y el catálogo entran en una cola local. El envío por internet queda para un servicio futuro.
+office.history,Histórico,History,Historial
+office.suspended,suspenso,suspended,suspendido
+office.injury_short,lesão {0},injury {0},lesión {0}
+office.starter,[titular],[starter],[titular]
+office.unavailable,[fora],[out],[fuera]
+office.no_competition,O clube não está em uma competição.,The club is not in a competition.,El club no está en una competición.
+tab.squad,Elenco,Squad,Plantilla
+tab.lineup,Escalação,Lineup,Alineación
+tab.table,Tabela,Table,Tabla
+tab.calendar,Calendário,Calendar,Calendario
+tab.finances,Finanças,Finances,Finanzas
+tab.market,Mercado,Market,Mercado
+tab.training,Treino,Training,Entrenamiento
+tab.options,Opções,Options,Opciones
+column.name,Nome,Name,Nombre
+column.position,Pos,Pos,Pos
+column.age,Idade,Age,Edad
+column.trait,Carac.,Trait,Carac.
+column.strength,Força,Strength,Fuerza
+column.fitness,Cond.,Fit,Cond.
+column.goals,Gols,Goals,Goles
+column.wage,Salário,Wage,Sueldo
+column.number,#,#,#
+column.club,Time,Club,Club
+column.played,J,P,J
+column.wins,V,W,G
+column.draws,E,D,E
+column.losses,D,L,P
+column.goals_for,GP,GF,GF
+column.goals_against,GC,GA,GC
+column.goal_diff,SG,GD,DG
+column.points,Pts,Pts,Pts
+position.0,Goleiro,Goalkeeper,Portero
+position.1,Lateral,Full-back,Lateral
+position.2,Zagueiro,Centre-back,Defensa
+position.3,Meia,Midfielder,Mediocampista
+position.4,Atacante,Forward,Delantero
+side.0,Direita,Right,Derecha
+side.1,Esquerda,Left,Izquierda
+tactic.0,Equilibrado,Balanced,Equilibrado
+tactic.1,Ataque total,All-out attack,Ataque total
+tactic.2,Contra-ataque,Counter-attack,Contraataque
+speed.1,Lenta,Slow,Lenta
+speed.2,Normal,Normal,Normal
+speed.3,Rápida,Fast,Rápida
+match.pause,Pausar,Pause,Pausa
+match.resume,Retomar,Resume,Reanudar
+match.skip,Ir para o fim,Skip to the end,Ir al final
+match.kickoff,A bola vai rolar.,The whistle is about to go.,El balón va a rodar.
+match.another,Fim de jogo. Há outro compromisso hoje.,Full time. There is another match today.,Final. Hay otro compromiso hoy.
+match.full_time,Fim de jogo: {0} x {1}.,Full time: {0}-{1}.,Final: {0} x {1}.
+event.goal,{0}' — Gol de {1}. {2}.,{0}' — Goal by {1}. {2}.,{0}' — Gol de {1}. {2}.
+event.own_goal,{0}' — Gol contra de {1} ({2}).,{0}' — Own goal by {1} ({2}).,{0}' — Gol en propia de {1} ({2}).
+event.penalty_goal,{0}' — Pênalti de {1}. {2}.,{0}' — Penalty by {1}. {2}.,{0}' — Penalti de {1}. {2}.
+event.header_goal,{0}' — Gol de cabeça de {1}. {2}.,{0}' — Header by {1}. {2}.,{0}' — Gol de cabeza de {1}. {2}.
+event.yellow,{0}' — Cartão amarelo para {1}.,{0}' — Yellow card for {1}.,{0}' — Tarjeta amarilla para {1}.
+event.red,{0}' — Cartão vermelho para {1} ({2}).,{0}' — Red card for {1} ({2}).,{0}' — Tarjeta roja para {1} ({2}).
+event.injury,{0}' — {1} deixa o campo. Desfalque por {2} jogo(s).,{0}' — {1} leaves the pitch. Out for {2} match(es).,{0}' — {1} deja el campo. Baja por {2} partido(s).
+event.halftime,Intervalo.,Half-time.,Descanso.
+event.full_time,Fim de jogo.,Full time.,Final del partido.
+market.no_funds,Caixa insuficiente.,Not enough money.,Caja insuficiente.
+market.rejected_fee,{0} recusou. Pedem cerca de {1}.,{0} refused. They want about {1}.,{0} rechazó. Piden cerca de {1}.
+market.rejected,{0} recusou a proposta.,{0} rejected the offer.,{0} rechazó la oferta.
+market.ok,{0} é o novo reforço do {1}.,{0} has joined {1}.,{0} es el nuevo refuerzo de {1}.
+market.offer,Proposta por {0},Offer for {0},Oferta por {0}
+market.bad_amount,Informe um valor inteiro.,Enter a whole number.,Indica un número entero.
+sale.done,{0} vendido ao {1} por {2}.,{0} sold to {1} for {2}.,{0} vendido al {1} por {2}.
+season_end.title,Fim da temporada,End of season,Fin de temporada
+season_end.champion,{0} campeão da {1}.,{0} won the {1}.,{0} campeón de {1}.
+season_end.promoted,{0} sobe para a {1}. {2} cai.,{0} is promoted to {1}. {2} goes down.,{0} sube a {1}. {2} desciende.
+season_end.promotion,{0} sobe. {1} é rebaixado.,{0} goes up. {1} is relegated.,{0} asciende. {1} desciende.
+season_end.new_season,Temporada {0} iniciada.,Season {0} has started.,Temporada {0} iniciada.
+season_end.continue_season,Começar {0},Start {0},Empezar {0}
+season_end.empty,A temporada virou.,The season rolled over.,La temporada cambió.
+history.champion,{0} — {1} campeão da {2}.,{0} — {1} won the {2}.,{0} — {1} campeón de {2}.
+sacking.title,Demissão,Sacked,Destitución
+sacking.text,A diretoria do {0} encerrou o ciclo. Escolha outro clube do mesmo país.,The {0} board ended the cycle. Pick another club from the same country.,La directiva de {0} cerró el ciclo. Elige otro club del mismo país.
+sacking.notice,{0} foi demitido do {1}.,{0} was sacked by {1}.,{0} fue destituido de {1}.
+sacking.take_job,Assumir time,Take the job,Asumir el club
+editor.find_club,Procurar time:,Find club:,Buscar club:
+editor.find_player,Procurar jogador:,Find player:,Buscar jugador:
+editor.show,Mostrar times:,Show clubs:,Mostrar clubes:
+editor.no_crest,sem escudo,no crest,sin escudo
+editor.no_shirts,sem camisas,no shirts,sin camisetas
+editor.duplicates,jogadores duplicados,duplicate players,jugadores duplicados
+editor.add,adicionar,add,añadir
+editor.edit,editar,edit,editar
+editor.delete,deletar,delete,borrar
+editor.home,início,home,inicio
+editor.quit,sair jogo,quit game,salir
+editor.first_team,Principal,First team,Principal
+editor.reserves,Juniores,Reserves,Juveniles
+editor.random,Criar aleatório,Create random,Crear aleatorio
+editor.seats,{0} lugares,{0} seats,{0} localidades
+editor.column.club,Time,Club,Club
+editor.column.country,Pais,Country,País
+editor.column.level,Nivel,Level,Nivel
+editor.column.name,Nome,Name,Nombre
+editor.column.position,Posicao,Position,Posición
+editor.column.age,idade,age,edad
+editor.column.trait,Carac.,Trait,Carac.
+editor.column.side,Lado,Side,Lado
+editor.new_club,Adicionar Time,Add club,Añadir club
+editor.edit_club,Editar Time,Edit club,Editar club
+editor.new_player,Adicionar Jogador,Add player,Añadir jugador
+editor.edit_player,Editar Jogador,Edit player,Editar jugador
+editor.name,Nome:,Name:,Nombre:
+editor.coach,Nome do Técnico:,Coach name:,Nombre del técnico:
+editor.stadium,Nome do Estádio:,Stadium name:,Nombre del estadio:
+editor.capacity,Capacidade:,Capacity:,Capacidad:
+editor.level,Nível inicial:,Starting level:,Nivel inicial:
+editor.reputation,Reputação:,Reputation:,Reputación:
+editor.country,Pais do time:,Club country:,País del club:
+editor.player_country,Pais:,Country:,País:
+editor.state,Estado:,State:,Estado:
+editor.file,Arquivo:,File:,Archivo:
+editor.text_color,Cor de Texto:,Text color:,Color del texto:
+editor.background_color,Cor de Fundo:,Background color:,Color de fondo:
+editor.position,Posição:,Position:,Posición:
+editor.side,Lado:,Side:,Lado:
+editor.age,Idade:,Age:,Edad:
+editor.star,Estrela,Star,Estrella
+editor.world_class,Top Mundial,World class,Top mundial
+editor.keep_adding,Continuar adicionando,Keep adding,Seguir añadiendo
+editor.ok,OK,OK,OK
+editor.cancel,Cancelar,Cancel,Cancelar
+editor.delete_club,Apagar o time? Isso pode ocasionar erros no jogo!,Delete this club? It can break the game!,¿Borrar el club? Puede causar errores en el juego!
+editor.confirm_delete,Apagar,Delete,Borrar
+editor.transfer,Transferir Jogador,Transfer player,Transferir jugador
+editor.transfer_title,Transferir jogador,Transfer player,Transferir jugador
+editor.created,Criado: {0},Created: {0},Creado: {0}
+editor.bad_name,Nome do time inválido,Invalid club name,Nombre de club inválido
+editor.bad_coach,Nome do tecnico inválido,Invalid coach name,Nombre de técnico inválido
+editor.bad_stadium,Nome do estádio inválido,Invalid stadium name,Nombre de estadio inválido
+editor.bad_capacity,O estádio deve ter entre mil e 120 mil lugares,Stadium capacity must be between 1,000 and 120,000,El estadio debe tener entre mil y 120 mil localidades
+editor.bad_file,Nome do arquivo inválido,Invalid file name,Nombre de archivo inválido
+editor.file_exists,Arquivo já existe, escolha outro nome,File already exists,El archivo ya existe
+editor.bad_player,Nome inválido,Invalid name,Nombre inválido
+editor.name_short,Nome muito curto,Name is too short,Nombre muy corto
+editor.name_long,Nome muito longo,Name is too long,Nombre muy largo
+editor.limit,Limite de jogadores alcançado,Squad is full,Límite de jugadores alcanzado
+editor.reputation.0,Municipal,Municipal,Municipal
+editor.reputation.1,Estadual,State,Estatal
+editor.reputation.2,Regional,Regional,Regional
+editor.reputation.3,Nacional,National,Nacional
+editor.reputation.4,Continental,Continental,Continental
+editor.reputation.5,Mundial,Worldwide,Mundial
+options.competitions,Estaduais: {0} / Copa: {1} / Continental: {2},State cups: {0} / Cup: {1} / Continental: {2},Estatales: {0} / Copa: {1} / Continental: {2}
+common.yes,sim,yes,sí
+common.no,não,no,no
+common.notice,Brasfoot Godot,Brasfoot Godot,Brasfoot Godot
+common.continue,Continuar,Continue,Continuar
+common.years,{0} anos,{0} years,{0} años
+common.contract,contrato {0} ano(s),contract {0} yr,contrato {0} año(s)
+trait.0,Colocação,Positioning,Colocación
+trait.1,Defesa Penalty,Penalty save,Atajada de penalti
+trait.2,Reflexo,Reflexes,Reflejos
+trait.3,Saída Gol,Sweeper keeper,Salida
+trait.4,Armação,Playmaking,Organización
+trait.5,Cabeceio,Heading,Cabeceo
+trait.6,Cruzamento,Crossing,Centro
+trait.7,Desarme,Tackling,Quite
+trait.8,Drible,Dribbling,Regate
+trait.9,Finalização,Finishing,Definición
+trait.10,Marcação,Marking,Marcaje
+trait.11,Passe,Passing,Pase
+trait.12,Resistência,Stamina,Resistencia
+trait.13,Velocidade,Pace,Velocidad
+editor.at_position,na posição,at position,en la posición
+editor.tip.add_club,Adicionar um time,Add a club,Añadir un club
+editor.tip.edit_club,Editar o time selecionado,Edit the selected club,Editar el club seleccionado
+editor.tip.delete_club,Apagar o time selecionado,Delete the selected club,Borrar el club seleccionado
+editor.tip.home,Voltar ao menu inicial,Back to the main menu,Volver al menú
+editor.tip.quit,Fechar o jogo,Quit the game,Cerrar el juego
+editor.tip.first_team,Mostrar o elenco principal,Show the first team,Mostrar el plantel principal
+editor.tip.reserves,Mostrar o elenco de juniores,Show the reserves,Mostrar los juveniles
+editor.tip.no_crest,Destacar os times sem arquivo de escudo,Highlight clubs with no crest file,Marcar clubes sin escudo
+editor.tip.no_shirts,Destacar os times sem arquivo de camisa,Highlight clubs with no shirt file,Marcar clubes sin camiseta
+editor.tip.duplicates,Destacar times com jogadores de nome repetido,Highlight clubs with duplicate player names,Marcar clubes con jugadores repetidos
+editor.tip.find_club,Procurar o próximo time,Find the next club,Buscar el siguiente club
+editor.tip.find_player,Procurar o próximo jogador,Find the next player,Buscar el siguiente jugador
+editor.tip.club_field,Nome ou parte do nome do time,Club name or part of it,Nombre del club o parte de él
+editor.tip.player_field,Nome ou parte do nome do jogador,Player name or part of it,Nombre del jugador o parte de él
+editor.tip.add_player,Adicionar jogador,Add a player,Añadir jugador
+editor.tip.edit_player,Editar o jogador selecionado,Edit the selected player,Editar el jugador seleccionado
+editor.tip.delete_player,Apagar o jogador selecionado,Delete the selected player,Borrar el jugador seleccionado
+editor.tip.random,Cria um jogador aleatório na posição escolhida ao lado,Creates a random player in the position chosen beside it,Crea un jugador aleatorio en la posición elegida al lado
+editor.tip.position,Posição usada por Criar aleatório,Position used by Create random,Posición que usa Crear aleatorio
+editor.tip.at_position,Essa posição vale para o botão Criar aleatório,This position belongs to Create random,Esta posición es la de Crear aleatorio
+editor.tip.count,Jogadores neste elenco e o limite,Players in this squad and the limit,Jugadores en este plantel y el límite
+editor.tip.starters,Quantidade de titulares,Number of starters,Cantidad de titulares
+editor.tip.crest,Escudo de {0},Crest of {0},Escudo de {0}
+editor.tip.shirt,Camisa {0},Shirt {0},Camiseta {0}
+editor.tip.stadium,Estádio: {0},Stadium: {0},Estadio: {0}
+editor.tip.capacity,Capacidade: {0},Capacity: {0},Capacidad: {0}
+editor.tip.coach,Técnico: {0},Coach: {0},Técnico: {0}
+editor.tip.coach_country,Nacionalidade do técnico: {0},Coach nationality: {0},Nacionalidad del técnico: {0}
+editor.tip.country,País: {0},Country: {0},País: {0}
+editor.tip.state,Estado: {0},State: {0},Estado: {0}
+editor.tip.level,Nível do time: {0},Club level: {0},Nivel del club: {0}
+editor.tip.reputation,Reputação: {0},Reputation: {0},Reputación: {0}
+editor.tip.club_name,Nome do time. Clique para editar.,Club name. Click to edit.,Nombre del club. Clic para editar.
+editor.tip.starter,Titular. Clique para mandar à reserva.,Starter. Click to move to the bench.,Titular. Clic para pasar a suplente.
+editor.tip.bench,Reserva. Clique para tornar titular.,Substitute. Click to make a starter.,Suplente. Clic para hacerlo titular.
+editor.tip.star,Estrela,Star,Estrella
+editor.tip.world_class,Top mundial,World class,Top mundial
+editor.tip.no_star,Sem estrela,No star,Sin estrella
+editor.tip.age,Arraste para escolher a idade,Drag to choose the age,Arrastra para elegir la edad
+editor.tip.trait_1,Primeira característica,First trait,Primera característica
+editor.tip.trait_2,Segunda característica,Second trait,Segunda característica
+editor.tip.side,Lado em que o jogador atua,Side the player plays on,Lado en el que juega
+editor.tip.col_shirt,Titular ou reserva,Starter or substitute,Titular o suplente
+editor.tip.col_star,Estrela ou top mundial,Star or world class,Estrella o top mundial
+editor.tip.col_name,Nome,Name,Nombre
+editor.tip.col_position,Posição,Position,Posición
+editor.tip.col_country,País,Country,País
+editor.tip.col_age,Idade,Age,Edad
+editor.tip.col_trait,Características. A célula mostra a sigla.,Traits. The cell shows the short name.,Características. La celda muestra la sigla.
+editor.tip.col_side,Lado,Side,Lado
+editor.tip.col_club,Time,Club,Club
+editor.tip.col_level,Nível,Level,Nivel
+editor.tip.continue,Ao confirmar abre o formulário de outro jogador,After confirming it opens another player form,Al confirmar abre el formulario de otro jugador
+settings.tip.volume,Arraste para escolher o volume do som,Drag to set the sound volume,Arrastra para elegir el volumen
